@@ -61,6 +61,17 @@
             [((AppDelegate*)self.delegate) focusSearchField];
             break;
           }
+          // Cmd-k
+          case 107: {
+            [((AppDelegate*)self.delegate) focusSearchField];
+            break;
+          }
+          // Cmd-enter
+          case 13: {
+            [((AppDelegate*)self.delegate) setActiveConversationAtIndex:@"1"];
+            return;
+          }
+
           default: {
             break;
           }
